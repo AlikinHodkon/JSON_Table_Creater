@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset='UTF-8'/>
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js' defer></script>
+    <title>Динамическая таблица</title>
+  </head>
+  <body>
+    <main>
+      <h1>Динамическая таблица</h1>
+      <div class="dataset">
+        <div class="dataset__predefined">
+          <button id="dataset-small">Малый набор</button>
+          <button id="dataset-big">Большой набор</button>
+        </div>
+        <div class="dataset__form">
+          <div class="dataset__input-group">
+            <label for="dataset">Набор данных:</label>
+            <input type="text" id="dataset" placeholder="URL набора данных" />
+          </div>
+          <button id="load-dataset">Загрузить</button>
+        </div>
+      </div>
+      <div id="table-wrapper">
+        <table class="dynamic-table">
+          <thead>
+            <tr>
+              <th>Имя</th>
+              <th>Фамилия</th>
+              <th>Возраст</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Anna</td>
+              <td>Smith</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>Sam</td>
+              <td>Johnson</td>
+              <td>45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

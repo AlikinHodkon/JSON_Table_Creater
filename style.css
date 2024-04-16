@@ -1,0 +1,90 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  padding: 32px;
+}
+
+button {
+  padding: 4px 8px;
+}
+
+.pagesButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dataset {
+  display: flex;
+  gap: 16px;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.dataset__predefined,
+.dataset__form {
+  display: flex;
+  gap: 8px;
+  flex-flow: column;
+}
+
+.dataset__form {
+  flex-grow: 1;
+}
+
+.dataset__input-group {
+  display: flex;
+  gap: 8px;
+  flex-flow: row;
+}
+
+.dataset__input-group input {
+  flex-grow: 1;
+}
+
+.dynamic-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dynamic-table th,
+.dynamic-table td {
+  border: 1px solid #000;
+}
+
+.dynamic-table th {
+  padding: 8px;
+}
+
+.dynamic-table td {
+  padding: 4px 8px;
+}
+
+.dynamic-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.dynamic-table tbody tr:hover {
+  background-color: #ccc;
+}
